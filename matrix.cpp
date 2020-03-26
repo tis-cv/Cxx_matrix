@@ -25,7 +25,7 @@ is_invertible(Matrix <N, N> m)
 }
 
 int
-main(void) {
+main2(void) {
     Matrix<2U, 2U> matrix_a {
         2., 1.,
         4., 2. };
@@ -35,8 +35,6 @@ main(void) {
     std::cout << "identity is inversible: " << (has_inverse ? "yes\n" : "no\n");
 
     Matrix<2U, 2U> matrix_b = matrix_a + (5 ^ id);
-    
-    a = 3;
     
     Matrix<2, 1> res = solve(matrix_b,  { 6., 10. });
     std::cout << "RESULT IS:\n" << res;
