@@ -24,6 +24,8 @@ is_invertible(Matrix <N, N> m)
     return -0.1 > det || det > 0.1;
 }
 
+int op(int a);
+
 int
 main(void) {
     Matrix<2U, 2U> matrix_a {
@@ -38,7 +40,11 @@ main(void) {
     
     Matrix<2, 1> res = solve(matrix_b,  { 6., 10. });
     std::cout << "RESULT IS:\n" << res;
-
+    
+    int a = 0, b = 0;
+    
+    b = op(a);
+    
     return 0;
     (void) has_inverse;
 }
