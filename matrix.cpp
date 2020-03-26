@@ -25,7 +25,7 @@ is_invertible(Matrix <N, N> m)
 }
 
 int
-main2(void) {
+main(void) {
     Matrix<2U, 2U> matrix_a {
         2., 1.,
         4., 2. };
