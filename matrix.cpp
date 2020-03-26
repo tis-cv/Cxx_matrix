@@ -35,7 +35,7 @@ main(void) {
     std::cout << "identity is inversible: " << (has_inverse ? "yes\n" : "no\n");
 
     Matrix<2U, 2U> matrix_b = matrix_a + (5 ^ id);
-    Matrix<2, 1> res = solve(matrix_b,  { 6., 10. });
+    Matrix<2, 1> res = solve(matrix_b,  { 6., 10. })
     std::cout << "RESULT IS:\n" << res;
 
     return 0;
